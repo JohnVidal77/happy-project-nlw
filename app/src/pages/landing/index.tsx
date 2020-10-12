@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
 
-import "./style.css";
-
 import LogoBrand from "../../images/logo-brand.svg";
+
+import "./styles.css";
 
 function Landing() {
   return (
@@ -20,9 +21,9 @@ function Landing() {
           <span>Santa Catarina</span>
         </div>
 
-        <a href="" className="enter-btn">
+        <Link to="/mapa-orfanato" className="enter-btn">
           <FiArrowRight size={"1.6rem"} color="rgba(0, 0, 0, 0.6)" />
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -1,13 +1,9 @@
 import React from "react";
 
-import Landing from "../pages/landing";
+import Router from "./router";
 
 function App() {
-  return (
-    <div className="App">
-      <Landing />
-    </div>
-  );
+  return <Router />;
 }
 
 export default App;
