@@ -1,0 +1,84 @@
+#landing-page {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#landing-page .content-wrapper {
+  position: relative;
+
+  width: 100%;
+  max-width: 1100px;
+
+  height: 100%;
+  max-height: 680px;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: url("../../images/kids-landing-page.svg") no-repeat 80% center;
+}
+
+.content-wrapper main {
+  max-width: 350px;
+}
+
+.content-wrapper main h1 {
+  font-size: 4.8rem;
+  font-weight: 900;
+  line-height: 4.4rem;
+}
+
+.content-wrapper main p {
+  margin-top: 2.2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.content-wrapper .location {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  font-size: 1.6rem;
+  line-height: 2rem;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: right;
+}
+
+.location strong {
+  font-weight: 800;
+}
+
+.content-wrapper .enter-btn {
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  width: 80px;
+  height: 80px;
+  background-color: #ffd666;
+  border-radius: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enter-btn:hover {
+  cursor: pointer;
+  background-color: #96feff;
+}
