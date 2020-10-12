@@ -19,9 +19,10 @@
 </header>
 
 # NLW #3 Pratice
+Projeto desenvolvido pela **Terceira Edição da Next Level Week** oferecida pela **Rocketseat**. O sistema será desenvolvido usando a **Omnistack**, ou seja, **React, React-native e NodeJS**, além de diversas outras tecnologias para produzir uma aplicação de alto desempenho.
 
 ## ❓ Sobre o projeto
-Projeto desenvolvido pela **Terceira Edição da Next Level Week** oferecida pela **Rocketseat**. O sistema será desenvolvido usando a **Omnistack**, ou seja, **React, React-native e NodeJS**, além de diversas outras tecnologias para produzir uma aplicação de alto desempenho. O projeto tem a proposta do desenvolvimento de uma plataforma para facilitar o contato com orfanatos na região pesquisada, podendo assim, mudar o dia de uma criança carente. Que tal levar um pouco de felicidade para o mundo?
+O projeto tem a proposta do desenvolvimento de uma plataforma para facilitar o contato com orfanatos na região pesquisada, podendo assim, mudar o dia de uma criança carente. Que tal levar um pouco de felicidade para o mundo?
 
 ## 🎯 Metas da Semana
 - [ ] MVP do frontend
