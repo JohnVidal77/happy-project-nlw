@@ -1,6 +1,17 @@
 {
-  "name": "nlw-pratice",
+  "name": "happy",
   "version": "0.0.2",
   "main": "index.js",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/typeorm",
+      "**/typeorm/**"
+    ]
+  },
+  "author": "John Vidal",
   "license": "MIT"
 }
