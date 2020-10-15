@@ -1,2 +1,5 @@
 node_modules/
 uploads/
+
+yarn-error.log
+yarn.lock
