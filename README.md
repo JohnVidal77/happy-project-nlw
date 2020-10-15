@@ -36,10 +36,13 @@ O projeto tem a proposta do desenvolvimento de uma plataforma para facilitar o c
 
 ## 🗂️ Estrutura
 
-O projeto segue uma estrutura [monorepo](https://en.wikipedia.org/wiki/Monorepo), inspirado no Google e Facebook, onde todos os módulos estão dentro do mesmo repositório. Algumas vantagens dessa estrutura são simplificação de dependências, fácil compartilhamento de código entre módulos e facilidade de manutenção de funcionalidades que abrangem diversas áreas diferentes do projeto.
+O projeto segue uma estrutura [monorepo](https://en.wikipedia.org/wiki/Monorepo), inspirado no Google e Facebook, onde todos os módulos estão dentro do mesmo repositório. Algumas vantagens dessa estrutura são simplificação de dependências, fácil compartilhamento de código entre módulos, facilidade de manutenção de funcionalidades que abrangem diversas áreas diferentes do projeto e alta escalabilidade.
 No projeto é usado yarn workspace para gerenciar todo o monorepo. Na raiz do repositório existe um package.json com as informações gerais do projeto, assim como arquivos de configuração genéricos e em cada módulo existe um package.json com suas respectivas dependências e informações.
 Para executar funções em diferentes módulos sem sair da raiz do projeto basta digitar o seguinte comando:
-yarn workspace {workspace_name} {script_name}
+
+
+    yarn workspace {workspace_name} {script_name}
+
 
 ## 📜 License
 
