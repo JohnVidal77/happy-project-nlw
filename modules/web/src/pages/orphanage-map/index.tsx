@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FiPlus } from "react-icons/fi";
-import { Map, Marker, TileLayer } from "react-leaflet";
+import { FiPlus, FiArrowRight } from "react-icons/fi";
+import { Map, Marker, TileLayer, Popup } from "react-leaflet";
 import { Icon } from "leaflet";
 
 import "leaflet/dist/leaflet.css";
@@ -13,11 +13,9 @@ import "./styles.css";
 const pointerIcon = new Icon({
   iconUrl: MapMarker,
   iconRetinaUrl: MapMarker,
-  iconAnchor: [5, 55],
-  popupAnchor: [10, -44],
-  iconSize: [50, 100],
-  shadowSize: [68, 95],
-  shadowAnchor: [20, 92],
+  iconAnchor: [29, 68],
+  iconSize: [58, 68],
+  popupAnchor: [170, 2],
 });
 
 function OrphanageMap() {
@@ -41,16 +39,19 @@ function OrphanageMap() {
         <FiPlus size="2rem" color="#fff" />
       </Link>
 
-      <Map
-        center={[-22.77799, -45.192997]}
-        zoom={15}
-        style={{ width: "100%", height: "100%" }}
-      >
+      <Map center={[-22.77799, -45.192997]} zoom={15} style={{ width: "100%", height: "100%" }}>
         {/* <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" /> */}
         <TileLayer
           url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
         />
-        <Marker position={[-22.77799, -45.192997]} icon={pointerIcon} />
+        <Marker position={[-22.77799, -45.192997]} icon={pointerIcon}>
+          <Popup closeButton={false} minWidth={240} maxWidth={240} className="map-popup">
+            Lar das Meninas
+            <Link to="">
+              <FiArrowRight size={20} color="#fff" />
+            </Link>
+          </Popup>
+        </Marker>
       </Map>
     </div>
   );
