@@ -1,0 +1,9 @@
+{
+	"name": "Orfanato 4",
+	"latitude": -18.43943,
+	"longitude": 57.11574,
+	"about": "lorem ipsum bla bla bla bla",
+	"instructions": "come see us",
+	"opening_hours": "das 08:00 as 18:00",
+	"open_on_weekends": true
+}
