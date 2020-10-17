@@ -28,11 +28,13 @@ O projeto tem a proposta do desenvolvimento de uma plataforma para facilitar o c
 
 ## 🎯 Metas da Semana
 
-- [ ] MVP do frontend
+- [x] MVP do frontend
 - [x] MVP do backend
 - [ ] MVP do mobile
 - [x] Configurar o Monorepo
 - [ ] Adicionar teste
+- [ ] Funcionalidade de excluir imagem no cadastro
+- [ ] Otimizar Imagens
 
 ## 📖 Modules
 
