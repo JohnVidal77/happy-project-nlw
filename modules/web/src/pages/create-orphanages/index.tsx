@@ -1,6 +1,8 @@
 import React, { useState, FormEvent, ChangeEvent } from "react";
 import { Map, Marker, TileLayer } from "react-leaflet";
 import { LeafletMouseEvent } from "leaflet";
+import { useHistory } from "react-router-dom";
+import { AxiosResponse } from "axios";
 
 import { FiPlus } from "react-icons/fi";
 
@@ -10,7 +12,24 @@ import HappyMapIcon from "../../utils/map-icon";
 import "./styles.css";
 import api from "../../services/api";
 
+interface Orphanage {
+  id: number;
+  latitude: number;
+  longitude: number;
+  name: string;
+  about: string;
+  instructions: string;
+  opening_hours: string;
+  open_on_weekends: boolean;
+  images: Array<{
+    url: string;
+    id: number;
+  }>;
+}
+
 export default function CreateOrphanage() {
+  const history = useHistory();
+
   const [position, setPostion] = useState({ latitude: 0, longitude: 0 });
   const [name, setName] = useState("");
   const [about, setAbout] = useState("");
@@ -57,9 +76,10 @@ export default function CreateOrphanage() {
     images.forEach((image) => data.append("images", image));
 
     try {
-      await api.post("/orphanage", data);
+      const response: AxiosResponse<Orphanage> = await api.post("/orphanage", data);
 
       alert("Orfanato cadastrado com sucesso");
+      history.push(`/orfanato/${response.data.id}`);
     } catch (err) {
       alert("Ops! Algo deu errado!");
     }
@@ -74,7 +94,7 @@ export default function CreateOrphanage() {
             <legend>Dados</legend>
 
             <Map
-              center={[-27.2092052, -49.6401092]}
+              center={[-22.77799, -45.192997]}
               style={{ width: "100%", height: 280 }}
               zoom={15}
               onclick={handleMapClick}
@@ -160,5 +180,3 @@ export default function CreateOrphanage() {
     </div>
   );
 }
-
-// return `https://a.tile.openstreetmap.org/${z}/${x}/${y}.png`;
