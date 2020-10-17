@@ -46,6 +46,8 @@ export default {
       images,
     };
 
+    data.open_on_weekends = data.open_on_weekends === "true";
+
     const imageSchema = Yup.object().shape({
       path: Yup.string().required(),
     });
