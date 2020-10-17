@@ -35,6 +35,8 @@ O projeto tem a proposta do desenvolvimento de uma plataforma para facilitar o c
 - [ ] Adicionar teste
 - [ ] Funcionalidade de excluir imagem no cadastro
 - [ ] Otimizar Imagens
+- [ ] Componentizar
+- [ ] Traduzir README
 
 ## 📖 Modules
 
