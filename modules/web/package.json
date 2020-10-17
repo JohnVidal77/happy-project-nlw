@@ -1,6 +1,6 @@
 {
   "name": "@happy/web",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
