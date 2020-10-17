@@ -8,6 +8,7 @@
         <a href="https://github.com/JohnVidal77/nlw-pratice">
             <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/JohnVidal77/happy-project-nlw">
         </a>
+  <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/JohnVidal77/happy-project-nlw">
   <a>
     <img alt="GitHub" src="https://img.shields.io/github/license/JohnVidal77/happy-project-nlw?color=brigthgreen">
   </a>  
