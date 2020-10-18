@@ -31,14 +31,14 @@ O projeto tem a proposta do desenvolvimento de uma plataforma para facilitar o c
 
 - [x] MVP do frontend
 - [x] MVP do backend
-- [ ] MVP do mobile
+- [x] MVP do mobile
 - [x] Configurar o Monorepo
 - [ ] Adicionar teste
-- [ ] Funcionalidade de excluir imagem no cadastro
 - [ ] Otimizar Imagens
 - [ ] Componentizar
 - [ ] Traduzir README
 - [ ] Migrar Mobile para dentro do monorepo
+- [ ] Evoluir aplicação para o próximo nivel (2.0)
 
 ## 📖 Modules
 
