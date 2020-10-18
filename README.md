@@ -38,11 +38,13 @@ O projeto tem a proposta do desenvolvimento de uma plataforma para facilitar o c
 - [ ] Otimizar Imagens
 - [ ] Componentizar
 - [ ] Traduzir README
+- [ ] Migrar Mobile para dentro do monorepo
 
 ## 📖 Modules
 
 - [Web App](https://github.com/JohnVidal77/happy-project-nlw/tree/main/modules/web)
 - [Backend](https://github.com/JohnVidal77/happy-project-nlw/tree/main/modules/backend)
+- [Mobile](https://github.com/JohnVidal77/happy-mobile)
 
 ## 🗂️ Estrutura
 
